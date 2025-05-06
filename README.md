@@ -1,26 +1,6 @@
-# StockMarketPredictor
+# 📈 Stock Market Predictor
 
-A machine learning-powered web app that predicts stock prices and analyzes market sentiment.
-
-📊 Key Features
-Stock Price Prediction: Get next-day price forecasts for any publicly traded company
-
-Sentiment Analysis: Evaluates market sentiment from recent news headlines
-
-Automatic Model Training: Self-learning system trains new models when needed
-
-Interactive Dashboard: Visualize predictions and model performance
-
-🛠 How It Works
-Data Collection: Uses Marketstack API to fetch historical stock data
-
-Feature Engineering: Calculates 15+ technical indicators (SMA, EMA, RSI, MACD, etc.)
-
-Machine Learning: Random Forest model trained on historical patterns
-
-Sentiment Analysis: NLTK's VADER analyzes news headlines from Yahoo Finance
-
-Web Interface: Flask backend with Bootstrap frontend for easy interaction
+*A machine learning web app that forecasts stock prices and analyzes market sentiment*
 
 Successful Prediction (AAPL):
 <img width="681" alt="Screenshot 2025-05-06 at 4 57 12 PM" src="https://github.com/user-attachments/assets/5d4e83eb-ae65-4ac5-aabb-b101d27f1458" />
@@ -33,21 +13,54 @@ Model Training Prompt (TSLA)
 
 When no model exists (like for TSLA here), the system prompts to train one
 
-⚙️ Setup Instructions
-Clone this repository
+---
 
-Install requirements: pip install -r requirements.txt
+## ✨ Features
 
-Add your API keys to .env:
+### 📊 Prediction Engine
+- Next-day price forecasts using Random Forest ML model
+- Automatic model training for new stocks
+- 15+ technical indicators (SMA, RSI, MACD, Bollinger Bands)
 
-MARKETSTACK_API_KEY=your_key_here
-Run: python app.py
+### 📰 Sentiment Analysis
+- Real-time news headline processing
+- VADER sentiment scoring (Positive/Neutral/Negative)
+- Yahoo Finance integration
 
-🌟 Why This Project?
-Combines fundamental and technical analysis with sentiment data
+### 🖥️ Web Interface
+- Clean Bootstrap frontend
+- Interactive dashboard
+- Model training prompts
 
-Production-ready with error handling and caching
+---
 
-Clean, responsive interface
+## 🛠️ How It Works
 
-Modular architecture for easy extension
+1. **Data Pipeline**  
+   - Fetches historical data via Marketstack API
+   - Calculates technical indicators
+   - Caches results for performance
+
+2. **Machine Learning**  
+   - Random Forest regression model
+   - Automated training for new tickers
+   - StandardScaler for feature normalization
+
+3. **Web App**  
+   - Flask backend API
+   - Responsive Bootstrap UI
+   - Error handling and user prompts
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.8+
+- Marketstack API key
+
+### Installation
+```bash
+git clone https://github.com/yourusername/StockMarketPredictor.git
+cd StockMarketPredictor
+pip install -r requirements.txt
