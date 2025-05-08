@@ -61,6 +61,6 @@ When no model exists (like for TSLA here), the system prompts to train one
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/StockMarketPredictor.git
+git clone https://github.com/shafay30/StockMarketPredictor.git
 cd StockMarketPredictor
 pip install -r requirements.txt
